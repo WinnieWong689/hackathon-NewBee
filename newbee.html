@@ -31,9 +31,9 @@
       var context = canvas.getContext('2d');
 
       var tracker = new tracking.ObjectTracker(['banana', 'coke']);
-      tracker.setInitialScale(2.4);
-      tracker.setStepSize(1.8);
-      tracker.setEdgesDensity(0.19);
+      tracker.setInitialScale(1.7);
+      tracker.setStepSize(3.5);
+      tracker.setEdgesDensity(0.3);
 
       tracking.track('#video', tracker, { camera: true });
 
@@ -49,7 +49,7 @@
           context.fillText('Calories    140', rect.x + rect.width + 5, rect.y + 33);
           context.fillText('TotalFat 0g  0%', rect.x + rect.width + 5, rect.y + 44);
           context.fillText('TotalSugars 39g', rect.x + rect.width + 5, rect.y + 55);
-
+          // context.fillRect(recrt.x,rect.y,80,70);
 
         });
       });
